@@ -29,7 +29,7 @@ Screen6 As screen:
         Height: =150
         OnSelect: =Navigate(Screen5,ScreenTransition.None)
         Size: =24
-        Text: ="Employee"
+        Text: ="Employee/Requestor"
         Width: =280
         X: =165
         Y: =650
