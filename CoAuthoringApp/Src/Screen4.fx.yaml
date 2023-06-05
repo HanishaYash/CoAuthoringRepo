@@ -13,7 +13,7 @@ Screen4 As screen:
     Icon7 As icon.Check:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =95
-        Icon: =Icon.Check
+        Icon: =Icon.Add
         OnSelect: |-
             =SubmitForm(Form6);
             Navigate(NewExpenseConfirm,ScreenTransition.None)
