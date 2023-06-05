@@ -51,7 +51,7 @@
         "Name": "Icon1",
         "Parent": "Component2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 253,
+        "PublishOrderIndex": 8,
         "Rules": [
           {
             "Category": "Design",
@@ -249,7 +249,7 @@
         "Name": "Icon4",
         "Parent": "Component2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 254,
+        "PublishOrderIndex": 9,
         "Rules": [
           {
             "Category": "Design",
@@ -432,7 +432,7 @@
       "HomeScreenNav",
       "NewExpense"
     ],
-    "LastModifiedTimestamp": "638215421393237825",
+    "LastModifiedTimestamp": "638215447640111439",
     "Name": "Component2",
     "Rules": [
       {
@@ -522,7 +522,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638215421393237825",
+  "LastModifiedTimestamp": "638215447640111439",
   "Name": "3c883049bdf74106b4dc073341bb00d1",
   "OverridableProperties": {},
   "Version": "638211110593119505"

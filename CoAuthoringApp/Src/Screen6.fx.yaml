@@ -17,7 +17,7 @@ Screen6 As screen:
         Height: =155
         OnSelect: =Navigate(Screen2,ScreenTransition.None)
         Size: =24
-        Text: ="Manager/Admin"
+        Text: ="Manager"
         Visible: =is_admin
         Width: =310
         X: =150
