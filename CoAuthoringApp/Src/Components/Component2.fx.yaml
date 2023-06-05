@@ -1,0 +1,25 @@
+Component2 As CanvasComponent:
+    Fill: =RGBA(153, 153, 153, 1)
+    Height: =App.DesignHeight
+    HomeScreenNav: =App.ActiveScreen
+    NewExpense: =App.ActiveScreen
+    Width: =100
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Icon1 As icon.Home:
+        Height: =104
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Component2.HomeScreenNav)
+        Width: =100
+        ZIndex: =1
+
+    Icon4 As icon.Add:
+        Height: =95
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Component2.NewExpense)
+        Width: =100
+        Y: =274
+        ZIndex: =2
+

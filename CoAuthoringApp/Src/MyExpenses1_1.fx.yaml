@@ -1,0 +1,118 @@
+MyExpenses1_1 As screen:
+    Fill: =RGBA(255, 255, 255, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: |+
+        =Set(ExpenseStatus,"Open");
+        Set(ExpenseSorting,SortOrder.Descending);
+        
+        
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Header_1 As label:
+        Align: =Align.Center
+        Fill: =RGBA(249, 251, 253, 1)
+        FocusedBorderColor: =Header_1.BorderColor
+        Height: =98
+        HoverBorderColor: =Header_1.BorderColor
+        HoverColor: =Header_1.Color
+        HoverFill: =Header_1.Fill
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Header_1.BorderColor
+        PressedColor: =Header_1.Color
+        PressedFill: =Header_1.Fill
+        Size: =23
+        Text: ="MY EXPENSES"
+        Width: =640
+        ZIndex: =1
+
+    GrayLine_1 As rectangle:
+        DisabledFill: =GrayLine_1.Fill
+        Fill: =RGBA(196, 220, 232, 1)
+        FocusedBorderColor: =GrayLine_1.BorderColor
+        Height: =1
+        HoverFill: =GrayLine_1.Fill
+        PressedFill: =GrayLine_1.Fill
+        Width: =640
+        Y: =98
+        ZIndex: =2
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =1026
+        Items: =NEInfo_7
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =110
+        ZIndex: =23
+
+        Image1_1 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1_1.Width - 104
+            X: =Image1_1.X + Image1_1.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle1_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.PeriodStartDate
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1_1.Width
+            X: =Title1_1.X
+            Y: =Title1_1.Y + Title1_1.Height + 4
+            ZIndex: =3
+
+        NextArrow1_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    Arrow1_1 As arrow.backArrow:
+        Height: =100
+        OnSelect: =Navigate(Screen5,ScreenTransition.None)
+        Width: =100
+        ZIndex: =24
+

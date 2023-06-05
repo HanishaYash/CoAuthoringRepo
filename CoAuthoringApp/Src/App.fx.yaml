@@ -1,0 +1,31 @@
+App As appinfo:
+    BackEnabled: =false
+    MinScreenHeight: =320
+    MinScreenWidth: =320
+    OnError: =
+    OnStart: |-
+        =If(
+            !IsBlank(
+                LookUp(
+                    AdminList,
+                    Title = User().Email
+                )
+            ),
+            Set(
+                is_admin,
+                true
+            ),
+            Set(
+                is_admin,
+                false
+            )
+        )
+    StartScreen: =Screen6
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

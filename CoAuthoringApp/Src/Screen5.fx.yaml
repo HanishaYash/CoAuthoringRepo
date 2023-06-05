@@ -1,0 +1,17 @@
+Screen5 As screen:
+    Fill: =RGBA(102, 182, 227, 1)
+
+    Label9 As label:
+        Height: =280
+        Size: =40
+        Text: ="Welcome to my expenses"
+        Width: =460
+        X: =165
+        Y: =335
+        ZIndex: =1
+
+    Component2_1 As Component2:
+        HomeScreenNav: =MyExpenses1_1
+        NewExpense: =Screen4_1
+        ZIndex: =2
+

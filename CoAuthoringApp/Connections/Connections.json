@@ -1,0 +1,108 @@
+{
+  "b1dccf4f-eb88-5ab7-104d-981973feb26f": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://4mdt74.sharepoint.com/sites/Projectmembers": {
+        "dataSources": {
+          "AdminList": {
+            "tableName": "09ff328c-d9fb-42b4-bf31-698b34ed7218"
+          },
+          "Approvers_1": {
+            "tableName": "ec07d7fe-a918-4d33-807d-b5a368b02935"
+          },
+          "CascadingDropdown": {
+            "tableName": "17cf09d8-83e5-4fce-a140-afa1eff0a353"
+          },
+          "CascadingDropdowns": {
+            "tableName": "bcb7da02-99dd-421e-ac2c-305cab2c6e11"
+          },
+          "CostCenterValues": {
+            "tableName": "9b9d274d-323a-46b5-a861-5384a7ba69a9"
+          },
+          "Documents": {
+            "tableName": "6c8c75f9-373c-4f10-9173-cf681e78972f"
+          },
+          "NEInfo": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_1": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_10": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_2": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_3": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_4": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_5": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_6": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_7": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_8": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "NEInfo_9": {
+            "tableName": "4916b976-9a25-402c-b1e6-df9c54796db8"
+          },
+          "Status": {
+            "tableName": "e24e714e-d5b7-4b4e-b206-844e96e42a1a"
+          },
+          "Status_1": {
+            "tableName": "e24e714e-d5b7-4b4e-b206-844e96e42a1a"
+          },
+          "YTAttachments": {
+            "tableName": "f3dc2878-8528-45a3-9795-92f621cd67b8"
+          },
+          "YTPLApprovers": {
+            "tableName": "0bc65968-16bf-42a4-b432-54eda2e8dae3"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Expenses_1",
+      "Approvers_1",
+      "YTPLApprovers",
+      "CostCenterValues",
+      "Documents",
+      "YTAttachments",
+      "CascadingDropdowns",
+      "CascadingDropdown",
+      "NEInfo",
+      "NEInfo_1",
+      "NEInfo_2",
+      "NEInfo_3",
+      "NEInfo_4",
+      "NEInfo_5",
+      "NEInfo_6",
+      "NEInfo_7",
+      "NEInfo_8",
+      "Status",
+      "Status_1",
+      "NEInfo_9",
+      "NEInfo_10",
+      "AdminList"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b1dccf4f-eb88-5ab7-104d-981973feb26f"
+  }
+}

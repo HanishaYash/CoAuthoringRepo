@@ -1,0 +1,54 @@
+Component1 As CanvasComponent:
+    Dashboard: =App.ActiveScreen
+    ExpensesList: =App.ActiveScreen
+    Fill: =RGBA(173, 171, 172, 1)
+    FilterExpense: =App.ActiveScreen
+    Height: =App.DesignHeight
+    HomeScreenNav: =App.ActiveScreen
+    NewExpense: =App.ActiveScreen
+    Width: =100
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Icon8 As icon.Home:
+        Height: =79
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Component1.HomeScreenNav)
+        Width: =100
+        Y: =15
+        ZIndex: =2
+
+    Icon9 As icon.DetailList:
+        Height: =84
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Component1.NewExpense)
+        Width: =100
+        Y: =250
+        ZIndex: =3
+
+    Icon10 As icon.FilterFlat:
+        Height: =69
+        Icon: =Icon.FilterFlat
+        OnSelect: =Navigate(Component1.FilterExpense)
+        Width: =100
+        Y: =370
+        ZIndex: =4
+
+    Icon11 As icon.Document:
+        Height: =94
+        Icon: =Icon.Document
+        OnSelect: =Navigate(Component1.Dashboard)
+        Width: =82
+        X: =18
+        Y: =490
+        ZIndex: =5
+
+    Icon12 As icon.DetailList:
+        Height: =84
+        Icon: =Icon.DetailList
+        OnSelect: =Navigate(Component1.ExpensesList)
+        Width: =77
+        Y: =121
+        ZIndex: =6
+

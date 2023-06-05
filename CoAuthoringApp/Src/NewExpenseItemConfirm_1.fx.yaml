@@ -1,0 +1,72 @@
+NewExpenseItemConfirm_1 As screen:
+    Height: =Max(App.Height, App.DesignHeight)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    NewExpenseItemConfirmTitleLabel_1 As label:
+        Align: =Align.Center
+        FocusedBorderColor: =NewExpenseItemConfirmTitleLabel_1.BorderColor
+        Height: =106
+        HoverBorderColor: =NewExpenseItemConfirmTitleLabel_1.BorderColor
+        HoverColor: =NewExpenseItemConfirmTitleLabel_1.Color
+        HoverFill: =NewExpenseItemConfirmTitleLabel_1.Fill
+        PressedBorderColor: =NewExpenseItemConfirmTitleLabel_1.BorderColor
+        PressedColor: =NewExpenseItemConfirmTitleLabel_1.Color
+        PressedFill: =NewExpenseItemConfirmTitleLabel_1.Fill
+        Size: =26
+        Text: |-
+            ="Your expense item has been 
+            added."
+        Width: =410
+        X: =119
+        Y: =567
+        ZIndex: =2
+
+    NewExpenseItemConfirmBackground_1 As rectangle:
+        DisabledFill: =NewExpenseItemConfirmBackground_1.Fill
+        Fill: =RGBA(62, 96, 170, 0)
+        FocusedBorderColor: =NewExpenseItemConfirmBackground_1.BorderColor
+        Height: =1136
+        HoverFill: =NewExpenseItemConfirmBackground_1.Fill
+        OnSelect: =Navigate(MyExpenses1,ScreenTransition.None)
+        PressedFill: =NewExpenseItemConfirmBackground_1.Fill
+        Width: =640
+        ZIndex: =4
+
+    NewExpenseItemConfirmGroup_1 As group:
+        Height: =5
+        Width: =5
+        X: =-219
+        Y: =-325
+        ZIndex: =8
+
+        NewExpenseItemConfirmCycle_1 As circle:
+            BorderColor: =RGBA(0, 217, 86, 1)
+            BorderThickness: =4
+            DisabledFill: =NewExpenseItemConfirmCycle_1.Fill
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =NewExpenseItemConfirmCycle_1.BorderColor
+            FocusedBorderThickness: =0
+            Height: =122
+            HoverFill: =NewExpenseItemConfirmCycle_1.Fill
+            PressedFill: =NewExpenseItemConfirmCycle_1.Fill
+            Width: =122
+            X: =259
+            Y: =365
+            ZIndex: =6
+
+        NewExpenseItemConfirmIcon_1 As icon.Check:
+            Color: =RGBA(0, 217, 86, 1)
+            DisabledFill: =NewExpenseItemConfirmIcon_1.Fill
+            FocusedBorderColor: =NewExpenseItemConfirmIcon_1.BorderColor
+            FocusedBorderThickness: =0
+            HoverBorderColor: =ColorFade(NewExpenseItemConfirmIcon_1.BorderColor, 20%)
+            HoverColor: =ColorFade(NewExpenseItemConfirmIcon_1.Color, 20%)
+            HoverFill: =NewExpenseItemConfirmIcon_1.Fill
+            Icon: =Icon.Check
+            PressedBorderColor: =ColorFade(NewExpenseItemConfirmIcon_1.BorderColor, -20%)
+            PressedColor: =ColorFade(NewExpenseItemConfirmIcon_1.Color, -20%)
+            PressedFill: =NewExpenseItemConfirmIcon_1.Fill
+            X: =290
+            Y: =396
+            ZIndex: =7
+
