@@ -1,4 +1,5 @@
 Screen4 As screen:
+    Fill: =
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -220,7 +221,7 @@ Screen4 As screen:
 
             DataCardValue45 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Height: =70
@@ -678,6 +679,8 @@ Screen4 As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 IsSearchable: =false
+                Items: |
+                    =Choices([@NEInfo_7].Status)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =[]
