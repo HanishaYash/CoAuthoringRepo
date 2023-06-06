@@ -221,7 +221,7 @@ Screen4 As screen:
 
             DataCardValue45 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =
+                DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Height: =70
