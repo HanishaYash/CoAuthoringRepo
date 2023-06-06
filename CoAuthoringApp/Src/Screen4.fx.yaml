@@ -680,7 +680,7 @@ Screen4 As screen:
                 Height: =70
                 IsSearchable: =false
                 Items: |
-                    =Choices([@NEInfo_7].Status)
+                    =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =[]
